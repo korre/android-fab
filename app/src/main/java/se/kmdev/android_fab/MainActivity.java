@@ -4,14 +4,29 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
+
+import se.kmdev.android_fab.fab.FloatingActionButton;
 
 
 public class MainActivity extends ActionBarActivity {
+
+    private FloatingActionButton floatingActionButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        floatingActionButton = (FloatingActionButton) findViewById(R.id.floatingActionButton);
+        floatingActionButton.setCenterIconResource(R.drawable.plus_icon);
+        floatingActionButton.addOnFloatingActionButtonPressedListener(new FloatingActionButton.OnFloatingActionButtonPressedListener() {
+            @Override
+            public void onPress() {
+                Toast.makeText(MainActivity.this, "Button pressed!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     @Override
