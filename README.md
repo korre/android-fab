@@ -5,7 +5,7 @@ Simple android view representing a floating action button. It's very basic at th
 
 ###How to use
 
-Add it to your XML like this (or programmatically by code). It will automatically default to the size specified in android documentation, 56x56.
+Add it to your XML like this (or programmatically by code). It will automatically default to the size recommended in android documentation, 56x56.
 
 ```
 <se.kmdev.android_fab.fab.FloatingActionButton
