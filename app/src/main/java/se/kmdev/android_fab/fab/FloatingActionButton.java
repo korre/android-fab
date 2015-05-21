@@ -20,7 +20,7 @@ import java.util.List;
  * For more info about the concept:
  * http://www.google.com/design/spec/components/buttons-floating-action-button.html
  *
- * Created by Kristoffer on 15-05-18.
+ * Created by Kristoffer, http://kmdev.se.
  */
 public class FloatingActionButton extends View {
 
