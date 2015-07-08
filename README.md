@@ -30,4 +30,6 @@ public void setCenterIconResource(int resourceID)
 public void setCenterIconBitmap(Bitmap bitmap)
 ```
 
+[![Demo CountPages alpha](http://share.gifyoutube.com/y0ROMV.gif)](https://www.youtube.com/watch?v=Y0ujkwBY318)
+
 Thats it for now.
