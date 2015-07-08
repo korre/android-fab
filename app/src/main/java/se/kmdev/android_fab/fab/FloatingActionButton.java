@@ -31,7 +31,7 @@ public class FloatingActionButton extends View {
 
     private final String TAG = FloatingActionButton.class.getName();
 
-    private final int DEFAULT_BACKGROUND_COLOR = Color.WHITE;
+    private final int DEFAULT_BACKGROUND_COLOR = Color.parseColor("#3779b0");
     private final int DEFAULT_SHADOW_COLOR = Color.DKGRAY;
     private final int DEFAULT_SIZE = 56;
     private final int DEFAULT_CENTER_SIZE = 20;

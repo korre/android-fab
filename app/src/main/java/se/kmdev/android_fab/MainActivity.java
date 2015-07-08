@@ -1,17 +1,23 @@
 package se.kmdev.android_fab;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.Toast;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import se.kmdev.android_fab.fab.FloatingActionButton;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends Activity {
 
     private FloatingActionButton floatingActionButton;
+    private ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,13 +25,16 @@ public class MainActivity extends ActionBarActivity {
         setContentView(R.layout.activity_main);
 
         floatingActionButton = (FloatingActionButton) findViewById(R.id.floatingActionButton);
-        floatingActionButton.setCenterIconResource(R.drawable.plus_icon);
+        floatingActionButton.setCenterIconResource(R.drawable.filter_icon);
         floatingActionButton.addOnFloatingActionButtonPressedListener(new FloatingActionButton.OnFloatingActionButtonPressedListener() {
             @Override
             public void onPress() {
                 Toast.makeText(MainActivity.this, "Button pressed!", Toast.LENGTH_SHORT).show();
             }
         });
+
+        listView = (ListView) findViewById(R.id.listView);
+        setupListview();
     }
 
     @Override
@@ -48,5 +57,18 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void setupListview() {
+        List<String> items = new ArrayList<>();
+
+        for (int i = 0 ; i < 100 ; i++) {
+            items.add("This is listview item: " + i);
+        }
+
+        ArrayAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, items);
+        listView.setAdapter(adapter);
+
+        floatingActionButton.attachToListView(listView);
     }
 }
