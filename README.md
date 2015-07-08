@@ -19,6 +19,11 @@ You can add a touch listener by using..
 public void addOnFloatingActionButtonPressedListener(OnFloatingActionButtonPressedListener onFloatingActionButtonPressedListener)
 ```
 
+Attach to a current ABSListView (ListView or GridView) by calling..
+```
+public void attachToListView(AbsListView listView)
+```
+
 .. and change the center icon by using
 ```
 public void setCenterIconResource(int resourceID)
