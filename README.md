@@ -1,7 +1,9 @@
 # Android - Floating Action Button (FAB)
 <img src="http://kmdev.se/img/gh-fab.png" width="300" height="200" />
 
-Simple android view representing a floating action button. It's very basic at the moment and I will update it with proper animations as soon as possible. 
+[![Click for video](http://share.gifyoutube.com/y0ROMV.gif)](https://www.youtube.com/watch?v=Y0ujkwBY318)
+
+Simple android view representing a floating action button.
 
 ###How to use
 
@@ -29,7 +31,5 @@ public void attachToListView(AbsListView listView)
 public void setCenterIconResource(int resourceID)
 public void setCenterIconBitmap(Bitmap bitmap)
 ```
-
-[![Demo CountPages alpha](http://share.gifyoutube.com/y0ROMV.gif)](https://www.youtube.com/watch?v=Y0ujkwBY318)
 
 Thats it for now.
