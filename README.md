@@ -21,7 +21,7 @@ You can add a touch listener by using..
 public void addOnFloatingActionButtonPressedListener(OnFloatingActionButtonPressedListener onFloatingActionButtonPressedListener)
 ```
 
-Attach to a current ABSListView (ListView or GridView) for a sweet hide/reveal animation by calling..
+Optionally attach to a current ABSListView (ListView or GridView) for a sweet hide/reveal animation by calling..
 ```
 public void attachToListView(AbsListView listView)
 ```
