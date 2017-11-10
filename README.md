@@ -1,5 +1,5 @@
 # Android - Floating Action Button (FAB)
-<img src="http://kmdev.se/img/gh-fab.png" width="300" height="200" />
+<img src="http://www.happanero.se/wp-content/uploads/2017/11/gh-fab.png" width="300" height="200" />
 
 [![Click for video](http://share.gifyoutube.com/y0ROMV.gif)](https://www.youtube.com/watch?v=Y0ujkwBY318)
 
